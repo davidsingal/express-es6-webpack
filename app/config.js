@@ -5,14 +5,14 @@ var compress = require('compression');
 var express = require('express');
 var favicon = require('serve-favicon');
 var jade = require('jade');
-var morgan = require('morgan');
+var logger = require('morgan');
 var root = process.cwd();
 
 module.exports = function(app) {
 
   // HTTP request logger
   if ('development' === app.get('env')) {
-    app.use(morgan('combined'));
+    app.use(logger('dev'));
   }
 
   // For multipart bodies
