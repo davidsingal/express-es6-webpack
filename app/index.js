@@ -1,14 +1,16 @@
 'use strict';
 
-var express = require('express');
+import express from 'express';
+import config from './config';
+import router from './router';
 
 // Creating a Express js application
 var app = express();
 
-// Importing configuration
-require('./config')(app);
+// Executing config
+config(app);
 
-// Importing router
-require('./router')(app);
+// Executing router
+router(app);
 
-module.exports = app;
+export default app;

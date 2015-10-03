@@ -1,0 +1,23 @@
+{
+  "name": "davidsingal",
+  "version": "1.0.0",
+  "homepage": "http://davidsingal.com",
+  "authors": [
+    "David Inga <davidsingal@icloud.com>"
+  ],
+  "description": "My own website",
+  "main": "app/assets/scripts/main.js",
+  "moduleType": [],
+  "keywords": [
+    "portfolio"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

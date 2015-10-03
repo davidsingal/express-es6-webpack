@@ -1,4 +1,6 @@
 .DS_Store
+.grunt
 *.log
 /node_modules
-
+/bower_components
+/public/assets

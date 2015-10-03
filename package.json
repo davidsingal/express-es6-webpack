@@ -4,30 +4,33 @@
   "description": "My own website",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidsingal/davidsingal.git"
   },
   "keywords": [
-    "portfolio",
-    "blog"
+    "portfolio"
   ],
   "author": "David Inga <davdsingal@icloud.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/davidsingal/davidsingal/issues"
   },
-  "homepage": "https://github.com/davidsingal/davidsingal#readme",
+  "homepage": "http://davdsingal.com",
   "dependencies": {
-    "babel": "^5.8.23",
-    "body-parser": "^1.13.3",
-    "compression": "^1.5.2",
+    "body-parser": "^1.14.1",
+    "compression": "^1.6.0",
     "express": "^4.13.3",
     "jade": "^1.11.0",
     "morgan": "^1.6.1",
     "serve-favicon": "^2.3.0",
-    "stylus": "^0.52.1"
+    "stylus": "^0.52.4"
+  },
+  "devDependencies": {
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "webpack": "^1.12.2"
   }
 }

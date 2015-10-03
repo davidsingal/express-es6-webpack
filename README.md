@@ -6,17 +6,25 @@ My own website based on Express.js
 
 Requirements:
 
-* Node JS
+* Node Js 4.1+ [How to install](https://nodejs.org/download/)
+
+Install global libraries:
+
+    npm install -g grunt-cli bower babel
 
 To install execute:
 
-  npm install
+    npm install
 
 ## Usage
 
 To start:
 
-  npm start
+    npm start
+
+To test:
+
+    npm test
 
 ## Contributing
 

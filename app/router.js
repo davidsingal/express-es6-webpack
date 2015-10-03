@@ -1,7 +1,9 @@
 'use strict';
 
-module.exports = function(app) {
+import welcomeController from './controllers/welcome_controller';
 
-  app.get('/', require('./controllers/welcome_controller').index);
+export default (app) => {
+
+  app.get('/', welcomeController.index);
 
 };

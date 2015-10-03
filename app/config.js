@@ -1,14 +1,15 @@
 'use strict';
 
-var bodyParser = require('body-parser');
-var compress = require('compression');
-var express = require('express');
-var favicon = require('serve-favicon');
-var jade = require('jade');
-var logger = require('morgan');
-var root = process.cwd();
+import bodyParser from 'body-parser';
+import compress from 'compression';
+import express from 'express';
+import favicon from 'serve-favicon';
+import jade from 'jade';
+import logger from 'morgan';
 
-module.exports = function(app) {
+const root = process.cwd();
+
+export default (app) => {
 
   // HTTP request logger
   if ('development' === app.get('env')) {
@@ -25,13 +26,13 @@ module.exports = function(app) {
   app.use(compress());
 
   // Configuring Jade as layout engine
-  app.set('views', __dirname + '/views');
+  app.set('views', `${ __dirname }/views`);
   app.set('view engine', 'jade');
 
   // Public folder
-  app.use(express.static(root + '/public'));
+  app.use(express.static(`${ root }/public`));
 
   // Middleware for serving a favicon
-  app.use(favicon(root + '/public/favicon.ico'));
+  app.use(favicon(`${ root }/public/favicon.ico`));
 
 };
