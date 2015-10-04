@@ -9,7 +9,7 @@ import logger from 'morgan';
 
 const root = process.cwd();
 
-export default (app) => {
+export default function(app) {
 
   // HTTP request logger
   if ('development' === app.get('env')) {

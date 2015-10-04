@@ -2,7 +2,7 @@
 
 import welcomeController from './controllers/welcome_controller';
 
-export default (app) => {
+export default function(app) {
 
   app.get('/', welcomeController.index);
 

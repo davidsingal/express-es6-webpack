@@ -12,6 +12,7 @@
   "strict": true,
   "undef": true,
   "unused": true,
+  "esnext": true,
   "globals": {
     "requirejs": true,
     "define": true

@@ -4,7 +4,18 @@ html(lang="en")
     meta(charset="utf-8")
     meta(http-equiv="x-ua-compatible", content="ie=edge")
     title David Inga | Front end engineer
-    meta(name="description", content="Wine, beer and food lover, developer enthusiast and engineer at Vizzuality")
+    meta(name="description", content="Wine, beer and food lover, enthusiast developer and engineer at Vizzuality")
     meta(name="viewport", content="width=device-width, initial-scale=1")
   body
+    hader.l-header
+      .m-brand
+        h1 David Inga
+        h2 Wine, beef and food lover, enthusiast developer and engineer at Vizzuality
+      nav.m-nav
+        ul
+          li: a(href="/") Home
+          li: a(href="http://blog.davidsingal.com") Blog
+          li: a(href="bWFpbHRvOmRhdmlkc2luZ2FsQGljbG91ZC5jb20=", id="contactLink") Contact me
     block main
+
+    script(src="assets/scripts/main.js")
