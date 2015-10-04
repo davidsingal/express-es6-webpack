@@ -1,8 +1,8 @@
 'use strict';
 
-module.exports = {
+export default {
 
-  index: function(req, res) {
+  index: (req, res) => {
     res.render('welcome/index');
   }
 

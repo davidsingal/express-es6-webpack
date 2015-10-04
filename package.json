@@ -29,6 +29,8 @@
     "stylus": "^0.52.4"
   },
   "devDependencies": {
+    "jscs": "^2.2.1",
+    "jscs-loader": "^0.2.0",
     "jshint": "^2.8.0",
     "jshint-loader": "^0.8.3",
     "webpack": "^1.12.2"
